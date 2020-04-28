@@ -1,6 +1,6 @@
 .appContainer {
   text-align: center;
-  height: 95vh;
+  height: 100vh;
   display: grid;
   grid-template-rows: 100px 1fr 100px;
 }

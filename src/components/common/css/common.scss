@@ -1,11 +1,29 @@
 $blueColor: rgb(87, 167, 237);
-$lightMagentaColor: #eed6ed;
+$darkBlueColor: #4579b2;
+$whiteColor: antiquewhite;
 $thickBorder: 3px solid #333;
 $thinBorder: 1px solid $blueColor;
+$borderRadius: 5px;
 $boxShadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
 
+.header {
+  height: 80px;
+}
+.footer {
+  height: 60px;
+}
 .header,
 .footer {
-  height: 100px;
+  padding: 10px;
+  font-size: 12px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
   border: 1px solid $blueColor;
+  background-color: $darkBlueColor;
+}
+
+.title {
+  padding: 20px;
+  font-size: large;
 }

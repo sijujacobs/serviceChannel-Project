@@ -1,22 +1,30 @@
 $blueColor: rgb(87, 167, 237);
-$darkBlueColor: #095291;
+$darkBlueColor: #4579b2;
 $whiteColor: antiquewhite;
 $thickBorder: 3px solid #333;
 $thinBorder: 1px solid $blueColor;
 $borderRadius: 5px;
 $boxShadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
+$highLight: rgb(160, 165, 172);
 
 .postList {
   display: grid;
   grid-template-columns: 320px 1fr;
   grid-gap: 5px;
-  max-height: 70px;
+  max-height: 60px;
   margin: 10px;
   color: antiquewhite;
 }
 .scrollArea {
   max-height: 65vh;
   overflow: scroll;
+}
+
+.activeCard {
+  background-color: $blueColor;
+  div {
+    color: #222;
+  }
 }
 .postCard {
   width: 280px;
@@ -32,16 +40,13 @@ $boxShadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
     background-color: $blueColor;
     cursor: pointer;
     color: $whiteColor;
-
+    font-weight: bold;
     transition: all 0.3s ease-in;
-    .cardHeader {
-      background-color: $darkBlueColor;
-    }
   }
 
   .cardHeader {
     height: 30px;
-    background-color: $blueColor;
+    background-color: $darkBlueColor;
   }
   .cardBody {
     padding: 10px;
@@ -61,11 +66,18 @@ $boxShadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
 .postDetails {
   border: 1px solid $blueColor;
   width: 100%;
-  height: 97%;
+  height: 65vh;
+  max-height: 65vh;
   box-shadow: $boxShadow;
   border-radius: $borderRadius;
 
   transition: all 0.3s ease-in;
+  .postName {
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+  }
   .detailHeader {
     height: 60px;
     background-color: $blueColor;
@@ -76,5 +88,11 @@ $boxShadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
   }
   .postLabel {
     color: $darkBlueColor;
+  }
+  .postDesc {
+    height: 300px;
+    overflow: scroll;
+    color: $blueColor;
+    margin: 20px 0 20px 0;
   }
 }

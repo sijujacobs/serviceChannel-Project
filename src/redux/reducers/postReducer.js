@@ -14,7 +14,6 @@ const postReducer = (state = initialState, action) => {
         error: null,
       };
     case postConstants.FETCH_POSTS_SUCCESS:
-      console.log(" FETCH_POSTS_SUCCESS :: payload : ", action.payload);
       return {
         ...state,
         loading: false,

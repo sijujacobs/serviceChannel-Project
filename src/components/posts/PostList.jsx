@@ -11,6 +11,8 @@ const PostList = (props) => {
   const { getPosts, postsData } = props;
 
   const [selectedPost, setSelectedPost] = useState({});
+  let firstPost = postsData[0] && postsData[0].data;
+  console.log(" :: pfirstPost : ", firstPost);
   useEffect(() => {
     getPosts();
   }, [getPosts]);
@@ -28,6 +30,9 @@ const PostList = (props) => {
             <PostCard
               key={i}
               post={p}
+              activePostID={
+                selectedPost ? selectedPost.id : postsData[0].data.id
+              }
               onSelection={(tPost) => onSelectHandler(tPost)}
             />
           ))}

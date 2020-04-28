@@ -2,7 +2,6 @@ import axios from "axios";
 const BASE_URL = "https://www.reddit.com/subreddits/popular.json?raw_json=1";
 
 function getPosts() {
-  console.log("PostSerive ::getPost : ");
   return axios.get(BASE_URL).then((response) => handleResponse(response));
 }
 function handleResponse(response) {

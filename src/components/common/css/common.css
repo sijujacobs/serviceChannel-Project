@@ -1,6 +1,29 @@
+.header {
+  height: 80px;
+}
+
+.footer {
+  height: 60px;
+}
+
 .header,
 .footer {
-  height: 100px;
+  padding: 10px;
+  font-size: 12px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid #57a7ed;
+  background-color: #4579b2;
+}
+
+.title {
+  padding: 20px;
+  font-size: large;
 }
 /*# sourceMappingURL=common.css.map */
