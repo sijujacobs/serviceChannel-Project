@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "71a37d307173bad957b2035f0c001a0d",
+    "revision": "7d77150aa9a12c30f7729d34358b35bb",
     "url": "/serviceChannel-Project/index.html"
   },
   {
-    "revision": "811a586c5910832262c5",
-    "url": "/serviceChannel-Project/static/css/main.cfb7470a.chunk.css"
+    "revision": "25a8978483ccbb9bdd09",
+    "url": "/serviceChannel-Project/static/css/main.71280854.chunk.css"
   },
   {
     "revision": "3506e7020197f7f3e47b",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/serviceChannel-Project/static/js/2.448a2d27.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "811a586c5910832262c5",
-    "url": "/serviceChannel-Project/static/js/main.bc998624.chunk.js"
+    "revision": "25a8978483ccbb9bdd09",
+    "url": "/serviceChannel-Project/static/js/main.871c4435.chunk.js"
   },
   {
     "revision": "ba69d695da59bf2635f5",
