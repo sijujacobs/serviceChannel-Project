@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/serviceChannel-Project/static/css/main.e6e6eb2c.chunk.css",
-    "main.js": "/serviceChannel-Project/static/js/main.cea3d5ca.chunk.js",
-    "main.js.map": "/serviceChannel-Project/static/js/main.cea3d5ca.chunk.js.map",
+    "main.js": "/serviceChannel-Project/static/js/main.baacef89.chunk.js",
+    "main.js.map": "/serviceChannel-Project/static/js/main.baacef89.chunk.js.map",
     "runtime-main.js": "/serviceChannel-Project/static/js/runtime-main.78959825.js",
     "runtime-main.js.map": "/serviceChannel-Project/static/js/runtime-main.78959825.js.map",
     "static/js/2.448a2d27.chunk.js": "/serviceChannel-Project/static/js/2.448a2d27.chunk.js",
     "static/js/2.448a2d27.chunk.js.map": "/serviceChannel-Project/static/js/2.448a2d27.chunk.js.map",
     "index.html": "/serviceChannel-Project/index.html",
-    "precache-manifest.c3ea75cb047cb4f7855766636bc03d1c.js": "/serviceChannel-Project/precache-manifest.c3ea75cb047cb4f7855766636bc03d1c.js",
+    "precache-manifest.2694f17f936a661ae9f0fe4011fc488d.js": "/serviceChannel-Project/precache-manifest.2694f17f936a661ae9f0fe4011fc488d.js",
     "service-worker.js": "/serviceChannel-Project/service-worker.js",
     "static/css/main.e6e6eb2c.chunk.css.map": "/serviceChannel-Project/static/css/main.e6e6eb2c.chunk.css.map",
     "static/js/2.448a2d27.chunk.js.LICENSE.txt": "/serviceChannel-Project/static/js/2.448a2d27.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.78959825.js",
     "static/js/2.448a2d27.chunk.js",
     "static/css/main.e6e6eb2c.chunk.css",
-    "static/js/main.cea3d5ca.chunk.js"
+    "static/js/main.baacef89.chunk.js"
   ]
 }
