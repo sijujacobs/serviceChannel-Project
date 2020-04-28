@@ -1,0 +1,80 @@
+$blueColor: rgb(87, 167, 237);
+$darkBlueColor: #095291;
+$whiteColor: antiquewhite;
+$thickBorder: 3px solid #333;
+$thinBorder: 1px solid $blueColor;
+$borderRadius: 5px;
+$boxShadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
+
+.postList {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-gap: 5px;
+  max-height: 70px;
+  margin: 10px;
+  color: antiquewhite;
+}
+.scrollArea {
+  max-height: 65vh;
+  overflow: scroll;
+}
+.postCard {
+  width: 280px;
+  height: 150px;
+  margin: 10px 0 10px 0;
+  border-radius: 5px;
+  border: 1px solid $blueColor;
+  box-shadow: $boxShadow;
+  transition: all 0.3s ease-in;
+  color: rgb(1, 118, 154);
+
+  &:hover {
+    background-color: $blueColor;
+    cursor: pointer;
+    color: $whiteColor;
+
+    transition: all 0.3s ease-in;
+    .cardHeader {
+      background-color: $darkBlueColor;
+    }
+  }
+
+  .cardHeader {
+    height: 30px;
+    background-color: $blueColor;
+  }
+  .cardBody {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+.postImg {
+  width: 100%;
+  height: auto;
+}
+.show {
+  visibility: visible;
+}
+.hide {
+  visibility: hidden;
+}
+.postDetails {
+  border: 1px solid $blueColor;
+  width: 100%;
+  height: 97%;
+  box-shadow: $boxShadow;
+  border-radius: $borderRadius;
+
+  transition: all 0.3s ease-in;
+  .detailHeader {
+    height: 60px;
+    background-color: $blueColor;
+    color: $whiteColor;
+  }
+  .detailBody {
+    padding: 10px;
+  }
+  .postLabel {
+    color: $darkBlueColor;
+  }
+}

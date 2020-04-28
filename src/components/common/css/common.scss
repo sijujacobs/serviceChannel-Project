@@ -1,0 +1,11 @@
+$blueColor: rgb(87, 167, 237);
+$lightMagentaColor: #eed6ed;
+$thickBorder: 3px solid #333;
+$thinBorder: 1px solid $blueColor;
+$boxShadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
+
+.header,
+.footer {
+  height: 100px;
+  border: 1px solid $blueColor;
+}

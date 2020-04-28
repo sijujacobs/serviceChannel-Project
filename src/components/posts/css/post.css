@@ -1,0 +1,89 @@
+.postList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 320px 1fr;
+      grid-template-columns: 320px 1fr;
+  grid-gap: 5px;
+  max-height: 70px;
+  margin: 10px;
+  color: antiquewhite;
+}
+
+.scrollArea {
+  max-height: 65vh;
+  overflow: scroll;
+}
+
+.postCard {
+  width: 280px;
+  height: 150px;
+  margin: 10px 0 10px 0;
+  border-radius: 5px;
+  border: 1px solid #57a7ed;
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
+          box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  color: #01769a;
+}
+
+.postCard:hover {
+  background-color: #57a7ed;
+  cursor: pointer;
+  color: antiquewhite;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.postCard:hover .cardHeader {
+  background-color: #095291;
+}
+
+.postCard .cardHeader {
+  height: 30px;
+  background-color: #57a7ed;
+}
+
+.postCard .cardBody {
+  padding: 10px;
+  font-size: 12px;
+}
+
+.postImg {
+  width: 100%;
+  height: auto;
+}
+
+.show {
+  visibility: visible;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.postDetails {
+  border: 1px solid #57a7ed;
+  width: 100%;
+  height: 97%;
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
+          box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.postDetails .detailHeader {
+  height: 60px;
+  background-color: #57a7ed;
+  color: antiquewhite;
+}
+
+.postDetails .detailBody {
+  padding: 10px;
+}
+
+.postDetails .postLabel {
+  color: #095291;
+}
+/*# sourceMappingURL=post.css.map */
