@@ -1,0 +1,28 @@
+.subRedditList {
+  padding: 10px;
+}
+
+.subRedditItem {
+  border: 1px solid #57a7ed;
+  border-radius: 5px;
+  color: #333;
+  padding: 5px;
+  font-size: 12px;
+  margin: 3px;
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.subRedditItem:hover {
+  -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
+          box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
+  color: white;
+  font-weight: bold;
+  background-color: #4579b2;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/*# sourceMappingURL=Subreddit.css.map */

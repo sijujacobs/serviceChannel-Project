@@ -1,8 +1,9 @@
 import axios from "axios";
-const BASE_URL = "https://www.reddit.com/subreddits/popular.json?raw_json=1";
+// const BASE_URL = "https://www.reddit.com/subreddits/popular.json?raw_json=1";
 
-function getPosts() {
-  return axios.get(BASE_URL).then((response) => handleResponse(response));
+function getPosts(category) {
+  let pUrl = `https://www.reddit.com${category.url}hot.json`;
+  return axios.get(pUrl).then((response) => handleResponse(response));
 }
 function handleResponse(response) {
   // console.log("handleResponse :: response ", response);

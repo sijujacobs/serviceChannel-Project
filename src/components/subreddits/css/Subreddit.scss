@@ -1,0 +1,30 @@
+$blueColor: rgb(87, 167, 237);
+$darkBlueColor: #4579b2;
+$whiteColor: antiquewhite;
+$thickBorder: 3px solid #333;
+$thinBorder: 1px solid $blueColor;
+$borderRadius: 5px;
+$boxShadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
+$highLight: rgb(160, 165, 172);
+$transition: all 0.2s ease-in;
+.subRedditList {
+  padding: 10px;
+}
+.subRedditItem {
+  border: 1px solid $blueColor;
+  border-radius: 5px;
+  color: #333;
+  padding: 5px;
+  font-size: 12px;
+  margin: 3px;
+  transform: scale(0.98);
+  transition: $transition;
+  &:hover {
+    box-shadow: $boxShadow;
+    color: white;
+    font-weight: bold;
+    background-color: $darkBlueColor;
+    cursor: pointer;
+    transform: scale(1);
+  }
+}

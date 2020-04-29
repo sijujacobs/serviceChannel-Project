@@ -1,22 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const PostDetails = (props) => {
   const { post } = props;
+  const [isActive, setActive] = useState(false);
+  useEffect(() => {
+    setActive(post && post.id);
+  }, [post]);
+
   return (
-    <div className="postDetails">
+    <div className={isActive ? "postDetails" : "hide"}>
       <div className="detailHeader">
         <div className="postName">{post.name}</div>
       </div>
       <div className="detailBody">
-        <img
-          className={post.banner_background_image ? "postImg" : "hide"}
-          src={post.banner_background_image}
-          alt="post bg"
-          height="142"
-          width="142"
-        ></img>
-
-        <div className="postDesc">{post.description}</div>
+        <label>Title </label>
+        <div className="item">{post.title}</div>
+        <label>Display name: </label>
+        <div className="item">{post.display_name}</div>
+        <label>Author : </label>
+        <div className="item">{post.author}</div>
+        <label>URL </label>
+        <div className="item urlBlock">
+          <a href="post.url">{post.url}</a>
+        </div>
       </div>
     </div>
   );

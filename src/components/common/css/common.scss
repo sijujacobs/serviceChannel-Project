@@ -7,13 +7,56 @@ $borderRadius: 5px;
 $boxShadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
 
 .header {
+  display: grid;
+  grid-template-columns: 30% 70%;
   height: 80px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $blueColor;
+  background-color: $darkBlueColor;
+
+  .appTitle {
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .navBar {
+    overflow: hidden;
+    background-color: $darkBlueColor;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    justify-content: end;
+
+    margin-right: 35px;
+    a {
+      float: left;
+      color: $whiteColor;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 5px 5px;
+      text-decoration: none;
+      font-size: 12px;
+      transition: all 0.3s ease-in;
+      &:hover {
+        background-color: #ddd;
+        border-radius: 5px;
+        color: black;
+      }
+      &:active {
+        color: white;
+      }
+    }
+  }
 }
+
+.viewContainer {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-gap: 5px;
+}
+
 .footer {
   height: 60px;
-}
-.header,
-.footer {
   padding: 10px;
   font-size: 12px;
   display: grid;
@@ -21,9 +64,5 @@ $boxShadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
   justify-content: center;
   border: 1px solid $blueColor;
   background-color: $darkBlueColor;
-}
-
-.title {
-  padding: 20px;
-  font-size: large;
+  color: white;
 }
