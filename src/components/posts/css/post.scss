@@ -46,6 +46,13 @@ $highLight: rgb(160, 165, 172);
   .cardBody {
     padding: 10px;
     font-size: 12px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+    .imageBlock {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 .postImg {

@@ -50,8 +50,10 @@
   color: black;
 }
 
-.header .navBar a:active {
-  color: white;
+.header .navBar .active {
+  background-color: #ddd;
+  border-radius: 5px;
+  color: black;
 }
 
 .viewContainer {

@@ -25,6 +25,18 @@ const formatPostData = (data) => {
     dObject.author_fullname = d.data.author_fullname;
     dObject.selftext = d.data.selftext; //Big text
     dObject.url = d.data.url;
+
+    let imageUrl =
+      d.data.preview &&
+      d.data.preview &&
+      d.data.preview.images &&
+      d.data.preview.images[0] &&
+      d.data.preview.images[0].resolutions[0] &&
+      d.data.preview.images[0].resolutions[0].url
+        ? d.data.preview.images[0].resolutions[0].url
+        : "";
+
+    dObject.imageUrl = imageUrl;
     dObject.domain = d.data.domain;
 
     return dObject;

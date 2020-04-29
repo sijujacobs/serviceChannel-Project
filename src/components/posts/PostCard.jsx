@@ -4,6 +4,9 @@ const PostCard = (props) => {
   const { post, activePost } = props;
 
   // const data = post.data;
+  // console.log(" ::post.preview  : ", img);
+  console.log(" :: Post : ", post);
+  // && post.preview.images && post.preview.images[0] && post.preview.images[0].resolutions[0]
 
   const onClickHandler = () => {
     props.onSelection(post);
@@ -15,22 +18,25 @@ const PostCard = (props) => {
       onClick={onClickHandler}
     >
       <div className="cardBody">
-        <div>
-          <label>ID : </label>
-          {post.id}
+        <div className="detailsBlock">
+          <div>
+            <label>ID : </label>
+            {post.id}
+          </div>
+          <div>
+            <label>Name : </label>
+            {post.name}
+          </div>
+          <div>
+            <label>Display name: </label>
+            {post.display_name}
+          </div>
+          <div>
+            <label>Author : </label>
+            {post.author}
+          </div>
         </div>
-        <div>
-          <label>Name : </label>
-          {post.name}
-        </div>
-        <div>
-          <label>Display name: </label>
-          {post.display_name}
-        </div>
-        <div>
-          <label>Author : </label>
-          {post.author}
-        </div>
+        <div className="imageBlock"></div>
       </div>
     </div>
   );

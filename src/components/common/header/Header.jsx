@@ -12,7 +12,7 @@ const Header = () => {
           Home
         </NavLink>
         <NavLink exact to="/view">
-          View
+          Posts
         </NavLink>
 
         <NavLink exact to="/about">

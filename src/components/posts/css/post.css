@@ -49,6 +49,15 @@
 .postCard .cardBody {
   padding: 10px;
   font-size: 12px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+}
+
+.postCard .cardBody .imageBlock {
+  width: 100%;
+  height: auto;
 }
 
 .postImg {

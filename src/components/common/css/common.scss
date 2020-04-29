@@ -42,9 +42,12 @@ $boxShadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
         border-radius: 5px;
         color: black;
       }
-      &:active {
-        color: white;
-      }
+    }
+
+    .active {
+      background-color: #ddd;
+      border-radius: 5px;
+      color: black;
     }
   }
 }
