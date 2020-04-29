@@ -1,0 +1,28 @@
+.documentation {
+  display: grid;
+  grid-template-rows: auto;
+  padding: 10px;
+}
+.documentHeader {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.topicRow {
+  display: grid;
+  border: 1px solid #999;
+  border-radius: 5px;
+  grid-template-areas: "topicLabel topicDesc";
+  grid-template-columns: 20% 60%;
+  grid-gap: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.topicLabel {
+  grid-area: topicLabel;
+  grid-gap: 20px;
+}
+
+.topicDesc {
+  grid-area: topicDesc;
+}
